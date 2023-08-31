@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Container sx={{mt: "85px", pt: "50px"}}>
+      <Container sx={{pt: "150px"}}>
         <Routes>
           <Route path="/" element={<Boards/>} />
         </Routes>
