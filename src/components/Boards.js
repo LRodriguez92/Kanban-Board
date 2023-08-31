@@ -12,13 +12,13 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function ResponsiveGrid() {
+export default function Board() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={{ xs: 2, md: 5 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+      <Grid container spacing={{ xs: 2, md: 10 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {Array.from(Array(6)).map((_, index) => (
           <Grid xs={2} sm={4} md={4} key={index}>
-            <Item>xs=2</Item>
+            <Item sx={{height: "200px"}}>xs=2</Item>
           </Grid>
         ))}
       </Grid>
