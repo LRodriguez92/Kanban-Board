@@ -1,7 +1,7 @@
 import './App.css';
 import Boards from './components/Boards';
 import Nav from './components/Nav';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Navigate} from 'react-router-dom';
 import { Container } from '@mui/material';
 
 function App() {
@@ -10,7 +10,9 @@ function App() {
       <Nav />
       <Container sx={{pt: "150px"}}>
         <Routes>
-          <Route path="/" element={<Boards/>} />
+          {/* Redirect home route to /boards route */}
+          <Route path="/" element={<Navigate to="/boards"/>}/>
+          <Route path="/boards" element={<Boards/>} />
         </Routes>
       </Container>
     </div>
