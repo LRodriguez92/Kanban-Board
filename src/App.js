@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Container sx={{pt: "150px"}}>
+      <Container maxWidth="xl" sx={{pt: "150px"}}>
         <Routes>
           {/* Redirect home route to /boards route */}
           <Route path="/" element={<Navigate to="/boards"/>}/>

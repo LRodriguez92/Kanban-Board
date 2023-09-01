@@ -18,7 +18,7 @@ export default function Board() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={{ xs: 2, md: 10 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {Array.from(Array(6)).map((_, index) => (
-          <Grid xs={2} sm={4} md={4} key={index}>
+          <Grid xs={4} sm={4} md={6} lg={3} key={index}>
             <Link to={`/boards/${index}`}>
               <Item sx={{height: "200px"}}>xs=2</Item>
             </Link>
