@@ -3,7 +3,7 @@ import {Routes, Route, Navigate} from 'react-router-dom';
 import { Container } from '@mui/material';
 import Boards from './components/Boards';
 import Nav from './components/Nav';
-import ShowBoard from './components/ShowBoard';
+import ShowBoardLists from './components/ShowBoardLists';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           {/* Redirect home route to /boards route */}
           <Route path="/" element={<Navigate to="/boards"/>}/>
           <Route path="/boards" element={<Boards/>} />
-          <Route path="/boards/:id" element={<ShowBoard />} />
+          <Route path="/boards/:id" element={<ShowBoardLists />} />
         </Routes>
       </Container>
     </div>
